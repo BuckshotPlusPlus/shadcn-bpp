@@ -1,0 +1,73 @@
+data theme {
+    background = "#fafafa"
+    foreground = "#18181b"
+    card = "#ffffff"
+    card-foreground = "#18181b"
+    popover = "#ffffff"
+    popover-foreground = "#18181b"
+    primary = "#71717a"
+    primary-foreground = "#ffffff"
+    secondary = "#f4f4f5"
+    secondary-foreground = "#18181b"
+    muted = "#f4f4f5"
+    muted-foreground = "#71717a"
+    accent = "#f4f4f5"
+    accent-foreground = "#18181b"
+    destructive = "#ef4444"
+    destructive-foreground = "#fef2f2"
+    border = "#e4e4e7"
+    input = "#e4e4e7"
+    ring = "#71717a"
+}
+
+data theme-dark {
+    background = "#18181b"
+    foreground = "#fafafa"
+    card = "#18181b"
+    card-foreground = "#fafafa"
+    popover = "#18181b"
+    popover-foreground = "#fafafa"
+    primary = "#a1a1aa"
+    primary-foreground = "#18181b"
+    secondary = "#27272a"
+    secondary-foreground = "#fafafa"
+    muted = "#27272a"
+    muted-foreground = "#a1a1aa"
+    accent = "#27272a"
+    accent-foreground = "#fafafa"
+    destructive = "#7f1d1d"
+    destructive-foreground = "#fafafa"
+    border = "#27272a"
+    input = "#27272a"
+    ring = "#a1a1aa"
+}
+
+data radius {
+    sm = "0.3rem"
+    md = "0.5rem"
+    lg = "0.8rem"
+    full = "9999px"
+}
+
+data font {
+    sans = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif"
+    mono = "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Courier New', monospace"
+}
+
+data animation {
+    duration-fast = "0.15s"
+    duration-normal = "0.25s"
+    duration-slow = "0.35s"
+    easing-default = "cubic-bezier(0.4, 0, 0.2, 1)"
+    easing-linear = "linear"
+    easing-in = "cubic-bezier(0.4, 0, 1, 1)"
+    easing-out = "cubic-bezier(0, 0, 0.2, 1)"
+    easing-in-out = "cubic-bezier(0.4, 0, 0.2, 1)"
+}
+
+data shadow {
+    sm = "0 1px 2px 0 rgb(0 0 0 / 0.05)"
+    md = "0 4px 6px -1px rgb(0 0 0 / 0.1)"
+    lg = "0 10px 15px -3px rgb(0 0 0 / 0.1)"
+    xl = "0 20px 25px -5px rgb(0 0 0 / 0.1)"
+}

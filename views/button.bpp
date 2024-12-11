@@ -1,0 +1,80 @@
+event ButtonHover {
+    opacity = "0.9"
+}
+
+event ButtonDefault {
+    opacity = "1"
+}
+
+view Button {
+    type = "button"
+    display = "inline-flex"
+    align-items = "center"
+    justify-content = "center"
+    border-radius = radius.md
+    font-weight = "500"
+    font-size = "0.875rem"
+    line-height = "1.25rem"
+    height = "2.5rem"
+    padding = "0 1rem"
+    position = "relative"
+    cursor = "pointer"
+    text-decoration = "none"
+    font-family = font.sans
+    transition = animation.duration-normal
+    background-color = theme.primary
+    color = theme.primary-foreground
+    border = "1px solid"
+    border-color = theme.primary
+    content = "Button"
+    onmouseover = ButtonHover
+    onmouseout = ButtonDefault
+}
+
+view ButtonSecondary:Button {
+    background-color = theme.secondary
+    color = theme.secondary-foreground
+    border-color = theme.secondary
+}
+
+view ButtonDestructive:Button {
+    background-color = theme.destructive
+    color = theme.destructive-foreground
+    border-color = theme.destructive
+}
+
+view ButtonOutline:Button {
+    background-color = "transparent"
+    color = theme.foreground
+    border-color = theme.input
+}
+
+view ButtonGhost:Button {
+    background-color = "transparent"
+    color = theme.foreground
+    border = "none"
+}
+
+view ButtonLink:Button {
+    background-color = "transparent"
+    color = theme.primary
+    border = "none"
+    text-decoration = "underline"
+}
+
+view ButtonIcon {
+    type = "div"
+    margin-right = "0.5rem"
+    height = "1rem"
+    width = "1rem"
+}
+
+event ButtonOutlineHover {
+    background-color = theme.accent
+    color = theme.accent-foreground
+}
+
+event ButtonGhostHover {
+    this.background-color = theme.accent
+    color = theme.accent-foreground
+}

@@ -1,0 +1,25 @@
+include "../themes/default.bpp"
+include "../views/button.bpp"
+include "../views/card.bpp"
+
+view DemoCard:Card {
+    CardTitle.content = "Create project"
+    CardDescription.content = "Deploy your new project in one-click."
+    CardContent.content = "We're using Shadcn styles for our shadcn-bpp port."
+    CardFooter.content = DeployButton
+}
+
+view DeployButton:Button {
+    content = "Deploy"
+}
+
+view CardDemo {
+    type = "div"
+    padding = "2rem"
+    content = DemoCard
+}
+
+page index {
+    title = "Card Demo"
+    body = CardDemo
+}

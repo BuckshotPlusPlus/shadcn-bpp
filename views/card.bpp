@@ -1,0 +1,64 @@
+view Card {
+    type = "div"
+    border-radius = radius.lg
+    border = "1px solid"
+    border-color = theme.border
+    background-color = theme.card
+    color = theme.card-foreground
+    box-shadow = shadow.sm
+    onmouseover = CardHover
+    onmouseout = CardReset
+    transition = "0.3s all"
+    width = "380px"
+    margin-top = "0px"
+    font-family = font.sans
+    content = [CardHeader, CardContent, CardFooter]
+}
+
+view CardHeader {
+    type = "div"
+    display = "flex"
+    flex-direction = "column"
+    space-y = "1.5"
+    padding = "1.5rem"
+    content = [CardTitle, CardDescription]
+}
+
+view CardTitle {
+    type = "h3"
+    font-size = "1.125rem"
+    font-weight = "600"
+    line-height = "1"
+    padding = "0"
+    margin = "0"
+}
+
+view CardDescription {
+    type = "p"
+    font-size = "0.875rem"
+    color = theme.muted-foreground
+    padding = "0"
+    margin = "0"
+}
+
+view CardContent {
+    type = "div"
+    padding = "1.5rem"
+    padding-top = "0"
+}
+
+view CardFooter {
+    type = "div"
+    display = "flex"
+    padding = "1.5rem"
+    padding-top = "0"
+    gap = "0.5rem"
+}
+
+event CardHover {
+    margin-top = "-10px"
+}
+
+event CardReset {
+    margin-top = "0px"
+}
